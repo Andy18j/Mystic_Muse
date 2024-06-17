@@ -56,7 +56,7 @@ function renderData(data) {
             const selectedItem = data.find(item => item.id === itemId);
             if (selectedItem) {
                 localStorage.setItem("product-id", selectedItem.id);
-                location.href = "/Product_Description/Product.html";
+                location.href = "./product-desc.html";
             }
         });
     });

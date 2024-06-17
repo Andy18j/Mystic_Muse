@@ -66,7 +66,7 @@
                 console.log('Signup successful:', responseData.msg);
                 alert('Signup successful: ' + responseData.msg);
                 // Optionally, redirect the user to another page upon successful signup
-                // window.location.href = "/login.html";
+                // window.location.href = "./login.html";
             } else {
                 console.error('Signup failed:', responseData);
                 alert('Signup failed: ' + responseData.msg);
@@ -110,7 +110,7 @@
                 localStorage.setItem("token", responseData.token);
 
                 // Optionally, redirect the user to another page upon successful login
-                window.location.href = "./index.html";
+                window.location.href = "../index.html";
             } else {
                 console.error('Login failed:', responseData);
                 alert('Login failed: ' + responseData.msg);

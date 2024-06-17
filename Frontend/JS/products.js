@@ -195,6 +195,5 @@ function addProductEventListeners() {
 function renderData(data) {
     const productEl = document.getElementById("product-container");
     productEl.innerHTML = data.map(item => getProductHTML(item)).join("");
-    addProductEventListeners(); // Add event listeners to products after rendering
-    // Rest of your rendering code...
+    addProductEventListeners(); 
 }
